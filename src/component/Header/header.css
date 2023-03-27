@@ -1,8 +1,8 @@
-/* html::after {
+.hHeader {
+	height: fit-content;
 	content: " ";
 	display: block;
-	position: absolute;
-	height: 4550vh;
+	/* position: absolute; */
 	top: 0;
 	left: 0;
 	bottom: 0;
@@ -17,7 +17,13 @@
 			rgba(0, 255, 0, 0.02),
 			rgba(0, 0, 255, 0.06)
 		);
-	z-index: 2;
+	z-index: -2;
 	background-size: 100% 2px, 3px 100%;
-	pointer-events: none;
-} */
+	/* pointer-events: none; */
+	margin-bottom: 25px;
+}
+
+*::selection {
+	color: rgb(255, 255, 255);
+	background-color: aqua;
+}

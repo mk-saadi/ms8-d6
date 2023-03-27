@@ -1,30 +1,35 @@
 import React from "react";
+import "./header.css";
 import logo from "../../images/Logo.svg";
 
 const Header = () => {
 	return (
-		<div className="bg-slate-800 text-white text-2xl p-3">
+		<div className="bg-slate-800 text-white text-2xl p-3 hHeader">
 			<div className="px-28  flex justify-between">
 				<img src={logo} />
-				<div className="">
+				<div className=" text-lg">
 					<a
 						className="pr-6 hover:underline hover:text-blue-400"
-						href="/shop">
+						href="/shop"
+					>
 						Shop
 					</a>
 					<a
 						className="pr-6 hover:underline hover:text-blue-400"
-						href="/order">
+						href="/order"
+					>
 						Order
 					</a>
 					<a
 						className="pr-6 hover:underline hover:text-blue-400"
-						href="/inventory">
+						href="/inventory"
+					>
 						Inventory
 					</a>
 					<a
 						className="pr-6 hover:underline hover:text-blue-400"
-						href="/login">
+						href="/login"
+					>
 						Log In
 					</a>
 				</div>
